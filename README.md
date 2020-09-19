@@ -1,7 +1,5 @@
 # Pyramid of Refactoring
 
-Corypight (c) 2018 IT Train Wlodzimierz Krakowski (www.refactoring.pl)
-
 This code is inspired by Joshua Kerievsky's book "Refactoring to Patterns"
 but the refactorings used during talk are more sophisticated as
 extract delegate, extract functional parameter, Java 8 streams and much more
