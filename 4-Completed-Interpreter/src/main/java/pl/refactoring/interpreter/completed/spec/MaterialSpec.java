@@ -8,10 +8,10 @@ import pl.refactoring.interpreter.completed.EstateMaterial;
 import pl.refactoring.interpreter.completed.RealEstate;
 import pl.refactoring.interpreter.completed.Spec;
 
-public class MaterialSpec implements Spec {
+class MaterialSpec implements Spec {
     private EstateMaterial material;
 
-    public MaterialSpec(EstateMaterial material) {
+    MaterialSpec(EstateMaterial material) {
         this.material = material;
     }
 

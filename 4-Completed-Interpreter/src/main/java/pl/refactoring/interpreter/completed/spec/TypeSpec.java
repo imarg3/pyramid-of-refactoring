@@ -8,10 +8,10 @@ import pl.refactoring.interpreter.completed.EstateType;
 import pl.refactoring.interpreter.completed.RealEstate;
 import pl.refactoring.interpreter.completed.Spec;
 
-public class TypeSpec implements Spec {
+class TypeSpec implements Spec {
     private EstateType type;
 
-    public TypeSpec(EstateType type) {
+    TypeSpec(EstateType type) {
         this.type = type;
     }
 

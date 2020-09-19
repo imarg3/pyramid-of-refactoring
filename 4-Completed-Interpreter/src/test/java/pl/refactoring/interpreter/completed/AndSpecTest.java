@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.mockito.Mockito;
 import pl.refactoring.interpreter.completed.spec.AndSpec;
+import pl.refactoring.interpreter.completed.spec.AndSpecBuilder;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -30,7 +31,9 @@ public class AndSpecTest {
 
     @Test
     void multipleTrues() {
-        AndSpec andSpec = new AndSpec(yesSpec, yesSpec, yesSpec);
+        AndSpec andSpec = new AndSpecBuilder().withSpec(yesSpec)
+                .withSpec(yesSpec)
+                .withSpec(yesSpec).createAndSpec();
 
         assertThat(andSpec.isSatisfiedBy(BRICK_VILLAGE_BUNGALLOW))
                 .isTrue();
@@ -40,7 +43,9 @@ public class AndSpecTest {
 
     @Test
     void multipleFalses() {
-        AndSpec andSpec = new AndSpec(noSpec, noSpec, noSpec);
+        AndSpec andSpec = new AndSpecBuilder().withSpec(noSpec)
+                .withSpec(noSpec)
+                .withSpec(noSpec).createAndSpec();
 
         assertThat(andSpec.isSatisfiedBy(BRICK_VILLAGE_BUNGALLOW))
                 .isFalse();

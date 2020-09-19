@@ -7,11 +7,11 @@ package pl.refactoring.interpreter.completed.spec;
 import pl.refactoring.interpreter.completed.RealEstate;
 import pl.refactoring.interpreter.completed.Spec;
 
-public class AreaRangeSpec implements Spec {
+class AreaRangeSpec implements Spec {
     private final float minArea;
     private final float maxArea;
 
-    public AreaRangeSpec(float minArea, float maxArea) {
+    AreaRangeSpec(float minArea, float maxArea) {
         this.minArea = minArea;
         this.maxArea = maxArea;
     }

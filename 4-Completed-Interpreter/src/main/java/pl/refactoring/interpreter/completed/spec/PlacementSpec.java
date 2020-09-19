@@ -8,10 +8,10 @@ import pl.refactoring.interpreter.completed.EstatePlacement;
 import pl.refactoring.interpreter.completed.RealEstate;
 import pl.refactoring.interpreter.completed.Spec;
 
-public class PlacementSpec implements Spec {
+class PlacementSpec implements Spec {
     private final EstatePlacement placement;
 
-    public PlacementSpec(EstatePlacement placement) {
+    PlacementSpec(EstatePlacement placement) {
         this.placement = placement;
     }
 
